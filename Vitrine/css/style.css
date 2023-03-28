@@ -1,0 +1,142 @@
+/*Navbar*/
+body::before {
+    display: block;
+    content: '';
+    height: 55px;
+}
+
+#navfix {
+    position: sticky;
+    top: 0;
+    left: 50%;
+}
+
+/*Recherche article*/
+.article-input {
+    width: 30%;
+}
+
+/* ShowCase */
+#title {
+    font-size: 1em;
+    color: rgb(176, 26, 26);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Boxes */
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid dark;
+    border-radius: 10px;
+    box-shadow: 3px 2px 7px black;
+    padding: 1rem;
+}
+
+#contain {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+
+.box {
+    max-width: 200px;
+    height: 50px;
+}
+
+/* Adresse */
+#map {
+    float: right;
+    width: 30em;
+    height: 30em;
+}
+
+/* Formulaire de contact*/
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+
+}
+
+#c {
+    margin-bottom: 25px;
+
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: black;
+    cursor: text;
+    transition: 0.2s;
+}
+
+#bob {
+    padding: 10px 0;
+    outline: none;
+    background: white;
+    border: 1px solid black;
+    width: 100%;
+    cursor: pointer;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    top: -35px;
+    font-size: 14px;
+}
+
+
+/*end part*/
+#aide {
+    font-size: 1em;
+    font-style: italic;
+    color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#assistance,
+#suivi,
+#livraison {
+    font-size: 0.8em;
+    font-style: italic;
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Footer */
+#end {
+
+    font-style: initial;
+    text-decoration-thickness: 0.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
